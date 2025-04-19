@@ -1,13 +1,13 @@
 import React from 'react';
-import 'C:/Users/ASingh/PycharmProjects/tvishdhi/src/styles/Partners.css';
-import img1 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/aws.png";
-import img2 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/filevine__.jpeg";
-import img3 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/gcp.png";
-import img4 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/azure_bg.png";
-import img5 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/aderant_.png";
-import img6 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/zapier.png";
-import img7 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/workato.jpeg";
-import img8 from "C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/clio.png";
+import '../styles/Partners.css';
+import img1 from "../assets/images/aws.png";
+import img2 from "../assets/images/filevine__.jpeg";
+import img3 from "../assets/images/gcp.png";
+import img4 from "../assets/images/azure_bg.png";
+import img5 from "../assets/images/aderant_.png";
+import img6 from "../assets/images/zapier.png";
+import img7 from "../assets/images/workato.jpeg";
+import img8 from "../assets/images/clio.png";
 
 const Partners = () => {
   return (

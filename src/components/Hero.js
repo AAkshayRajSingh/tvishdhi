@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import 'C:/Users/ASingh/PycharmProjects/tvishdhi/src/styles/Hero.css'; // Ensure the CSS path is correct
+import '../styles/Hero.css'; // Ensure the CSS path is correct
 
 const Hero = () => {
   const [showBrillianceText, setShowBrillianceText] = useState(true);

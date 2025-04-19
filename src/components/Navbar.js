@@ -1,7 +1,8 @@
 import React from 'react';
-import 'C:/Users/ASingh/PycharmProjects/tvishdhi/src/styles/Navbar.css';
-import logo from 'C:/Users/ASingh/PycharmProjects/tvishdhi/src/assets/images/logo.png';
-
+// import 'C:/Users/ASingh/PycharmProjects/tvishdhi/src/styles/Navbar.css';
+import logo from '../assets/images/logo.png';
+import '../styles/Navbar.css';
+// import logo from '../assets/images/logo.png'
 const Navbar = () => {
   return (
     <nav className="navbar">

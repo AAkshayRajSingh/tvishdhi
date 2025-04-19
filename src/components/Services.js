@@ -1,5 +1,5 @@
 import React from 'react';
-import 'C:/Users/ASingh/PycharmProjects/tvishdhi/src/styles/Services.css';
+import '../styles/Services.css';
 // import React from 'react';
 // import './Services.css';
 
