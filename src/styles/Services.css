@@ -1,0 +1,41 @@
+.services {
+  padding: 100px 20px;
+  background-color: black; /* Black background for the section */
+  text-align: center;
+  color: palevioletred; /* White text color for the section heading */
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.service-card {
+  background-color: #f4f4f4; /* Light gray background for each service card */
+  border-radius: 10px;
+  width: 250px;
+  padding: 40px 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333; /* Darker text color for titles */
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666; /* Lighter text color for paragraph */
+  margin-top: 15px;
+}

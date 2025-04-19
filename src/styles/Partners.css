@@ -1,0 +1,46 @@
+.partners {
+  padding: 50px 20px;
+  background-color: black;
+  text-align: center;
+  color: palevioletred;
+  overflow-x: hidden; /* Hide any overflow that might be outside the container */
+}
+
+.partner-logos {
+  display: flex;
+  gap: 60px; /* Increased the gap for more space between logos */
+  margin-top: 30px;
+  padding-bottom: 10px; /* Optional: to make scrolling more visible */
+  white-space: nowrap; /* Prevents images from wrapping onto a new line */
+  animation: scroll 20s linear infinite; /* Animation for automatic scrolling */
+}
+
+.partner-logos img {
+  width: 200px; /* Increased size of the logos */
+  flex-shrink: 0; /* Prevents images from shrinking in case of overflow */
+  object-fit: contain; /* Ensures logos are properly scaled without distortion */
+}
+
+/* Keyframes for automatic scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Scroll all the way */
+  }
+}
+
+/* Optional: to make the scroll indicator more visible */
+.partner-logos::-webkit-scrollbar {
+  height: 8px;
+}
+
+.partner-logos::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.partner-logos::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

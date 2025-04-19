@@ -1,0 +1,132 @@
+.projects {
+  padding: 60px 20px;
+  background-color: black;
+  color: palevioletred;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
+.projects-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-text {
+  margin-bottom: 50px;
+}
+
+.projects-text h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: palevioletred;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.projects-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+  color: #ddd;
+}
+
+/* Stylish, premium project cards */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Use this to allow more flexible resizing and maintain layout */
+.project-card {
+  flex: 1 1 calc(33.33% - 12px); /* 3 cards per row with gap accounted */
+  max-width: calc(33.33% - 12px);
+  background: linear-gradient(to right, #1a1a1a, #333);
+  border-radius: 15px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  position: relative;
+}
+
+
+.project-card h3 {
+  font-size: 1.8rem;
+  color: palevioletred;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  display: inline-block;
+  color: palevioletred;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #ffb6c1;
+  transform: translateX(5px); /* Adds a slight movement on hover */
+}
+
+/* Hover Effect to give 3D feel */
+.project-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 36px rgba(255, 192, 203, 0.2); /* Deeper shadow on hover */
+  background: linear-gradient(to right, #333, #444);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  z-index: -1; /* Ensures this overlay doesn't cover text */
+  transition: background 0.3s ease;
+}
+
+.project-card:hover::before {
+  background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6)); /* Darker overlay on hover */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .projects-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .projects-text p {
+    font-size: 1rem;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 20px; /* Reduced padding on smaller screens */
+  }
+}

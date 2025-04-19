@@ -1,0 +1,43 @@
+.hero {
+  position: relative;
+  background-color: #000; /* Solid black background */
+  height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero-content h1 span {
+  color: palevioletred; /* Pink color for a part of the title */
+}
+
+.hero-content p {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+.cta-button {
+  background-color: palevioletred; /* Pink background for the button */
+  color: white; /* Button text color */
+  padding: 24px 48px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: plum; /* Lighter pink on hover */
+  transform: scale(1.05); /* Slight increase in size on hover */
+}

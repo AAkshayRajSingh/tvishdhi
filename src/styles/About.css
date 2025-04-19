@@ -1,0 +1,119 @@
+.about {
+  padding: 60px 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  margin-bottom: 50px;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: palevioletred; /* Pink color for the heading */
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Row layout for Solution Development and Experience Design */
+.about-services {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.service {
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 48%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  color: palevioletred; /* Pink color for headings */
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Row layout for Strategy Consulting and Project Management */
+.about-strategy {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.strategy-service {
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 48%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strategy-service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-service h3 {
+  font-size: 1.8rem;
+  color: palevioletred; /* Pink color for headings */
+  margin-bottom: 10px;
+}
+
+.strategy-service p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .about-services,
+  .about-strategy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service,
+  .strategy-service {
+    width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}

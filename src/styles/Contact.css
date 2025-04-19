@@ -1,0 +1,128 @@
+.contact-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  color: palevioletred;
+  margin-bottom: 10px;
+}
+
+.contact-subheading {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+}
+
+/* Form Group Layout */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+/* Two-column layout */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Input & Textarea Styles */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: palevioletred;
+}
+
+/* Label Styles */
+.contact-form label {
+  font-weight: 500;
+  color: #ccc;
+}
+
+.contact-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.contact-form .checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: palevioletred;
+  cursor: pointer;
+}
+
+.contact-form .checkbox a {
+  color: palevioletred;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact-form .checkbox a:hover {
+  color: #ff99cc;
+}
+
+
+/* Button Style */
+.contact-button {
+  background-color: palevioletred;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.contact-button:hover {
+  background-color: #ff99cc;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
