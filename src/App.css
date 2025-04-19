@@ -26,3 +26,40 @@ h3 {
 html {
   scroll-behavior: smooth;
 }
+/* Mobile styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  body {
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 40px 20px !important;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Optional: stack layout elements vertically */
+  .flex-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
