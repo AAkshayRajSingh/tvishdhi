@@ -14,3 +14,14 @@
 .social-links a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 480px) {
+  .social-links a {
+    margin: 0 8px;
+    display: inline-block;
+    font-size: 1.2rem; /* optional: larger touch targets */
+  }
+
+  .footer {
+    padding: 30px 10px;
+  }
+}

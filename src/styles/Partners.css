@@ -44,3 +44,22 @@
 .partner-logos::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+@media screen and (max-width: 768px) {
+  .partner-logos {
+    gap: 40px; /* Less gap on smaller screens */
+  }
+
+  .partner-logos img {
+    width: 140px; /* Smaller logos for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partner-logos {
+    gap: 30px; /* Even smaller gaps for phones */
+  }
+
+  .partner-logos img {
+    width: 100px; /* Even smaller logo size */
+  }
+}

@@ -117,3 +117,40 @@
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+    text-align: left;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .about-services,
+  .about-strategy {
+    gap: 20px;
+  }
+
+  .service,
+  .strategy-service {
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  .service h3,
+  .strategy-service h3 {
+    font-size: 1.4rem;
+  }
+
+  .service p,
+  .strategy-service p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}

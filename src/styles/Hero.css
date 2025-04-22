@@ -41,3 +41,40 @@
   background-color: plum; /* Lighter pink on hover */
   transform: scale(1.05); /* Slight increase in size on hover */
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 16px 32px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 14px 20px;
+  }
+}

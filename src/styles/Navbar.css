@@ -62,3 +62,44 @@
   color: #fff; /* or whatever your theme requires */
   line-height: 1;
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar-logo-text {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-links a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+  }
+
+  .logo-image {
+    height: 40px;
+  }
+}

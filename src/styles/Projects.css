@@ -130,3 +130,37 @@
     padding: 20px; /* Reduced padding on smaller screens */
   }
 }
+@media screen and (max-width: 768px) {
+  .projects-text h2 {
+    font-size: 2.2rem; /* Smaller heading size for tablets */
+  }
+
+  .projects-text p {
+    font-size: 1rem; /* Adjust text size for better readability */
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%; /* Cards take full width on smaller screens */
+    padding: 20px; /* Reduced padding for more compact cards */
+    margin-bottom: 20px; /* Added spacing between cards */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-text h2 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+
+  .projects-text p {
+    font-size: 0.9rem; /* Smaller text size for mobile screens */
+  }
+
+  .project-card {
+    padding: 15px; /* Further reduce padding for mobile */
+  }
+}

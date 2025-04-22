@@ -39,3 +39,46 @@
   color: #666; /* Lighter text color for paragraph */
   margin-top: 15px;
 }
+@media screen and (max-width: 768px) {
+  .services {
+    padding: 80px 20px; /* Reduced padding for better space management on tablets */
+  }
+
+  .service-cards {
+    justify-content: center; /* Center cards for a more compact look */
+  }
+
+  .service-card {
+    width: 100%; /* Full width for service cards on smaller screens */
+    max-width: 400px; /* Optional: sets a max width to prevent overly stretched cards */
+    padding: 30px 20px; /* Reduced padding for more compact cards */
+    margin: 15px 0; /* Adjust margins for spacing */
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem; /* Slightly smaller title size for tablets */
+  }
+
+  .service-card p {
+    font-size: 0.9rem; /* Smaller text size for better mobile readability */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    padding: 60px 20px; /* Further reduce padding for mobile screens */
+  }
+
+  .service-card {
+    padding: 20px 15px; /* Reduce padding on mobile for better content fitting */
+    margin: 10px 0; /* Adjust card margins for smaller screens */
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem; /* Make heading even smaller for mobile screens */
+  }
+
+  .service-card p {
+    font-size: 0.85rem; /* Reduce paragraph text size for mobile devices */
+  }
+}
