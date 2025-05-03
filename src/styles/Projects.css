@@ -35,7 +35,7 @@
   color: #ddd;
 }
 
-/* Stylish, premium project cards */
+/* Project Cards Container */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -43,10 +43,10 @@
   gap: 30px;
 }
 
-/* Use this to allow more flexible resizing and maintain layout */
+/* Individual Card Styling */
 .project-card {
-  flex: 1 1 calc(33.33% - 12px); /* 3 cards per row with gap accounted */
-  max-width: calc(33.33% - 12px);
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
   background: linear-gradient(to right, #1a1a1a, #333);
   border-radius: 15px;
   padding: 30px;
@@ -57,7 +57,6 @@
   overflow: hidden;
   position: relative;
 }
-
 
 .project-card h3 {
   font-size: 1.8rem;
@@ -84,13 +83,13 @@
 
 .project-card a:hover {
   color: #ffb6c1;
-  transform: translateX(5px); /* Adds a slight movement on hover */
+  transform: translateX(5px);
 }
 
-/* Hover Effect to give 3D feel */
+/* Hover effect */
 .project-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 12px 36px rgba(255, 192, 203, 0.2); /* Deeper shadow on hover */
+  box-shadow: 0 12px 36px rgba(255, 192, 203, 0.2);
   background: linear-gradient(to right, #333, #444);
 }
 
@@ -102,15 +101,17 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.4));
-  z-index: -1; /* Ensures this overlay doesn't cover text */
+  z-index: -1;
   transition: background 0.3s ease;
 }
 
 .project-card:hover::before {
-  background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6)); /* Darker overlay on hover */
+  background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
 }
 
-/* Responsive design */
+/* ================= Responsive Design ================= */
+
+/* Tablets and below */
 @media screen and (max-width: 768px) {
   .projects-text h2 {
     font-size: 2.2rem;
@@ -127,40 +128,37 @@
 
   .project-card {
     width: 100%;
-    padding: 20px; /* Reduced padding on smaller screens */
-  }
-}
-@media screen and (max-width: 768px) {
-  .projects-text h2 {
-    font-size: 2.2rem; /* Smaller heading size for tablets */
-  }
-
-  .projects-text p {
-    font-size: 1rem; /* Adjust text size for better readability */
-  }
-
-  .project-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card {
-    width: 100%; /* Cards take full width on smaller screens */
-    padding: 20px; /* Reduced padding for more compact cards */
-    margin-bottom: 20px; /* Added spacing between cards */
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
   }
 }
 
+/* Mobile: ≤480px */
 @media screen and (max-width: 480px) {
   .projects-text h2 {
-    font-size: 1.8rem; /* Smaller heading for mobile */
+    font-size: 1.8rem;
   }
 
   .projects-text p {
-    font-size: 0.9rem; /* Smaller text size for mobile screens */
+    font-size: 0.95rem;
   }
 
   .project-card {
-    padding: 15px; /* Further reduce padding for mobile */
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .project-card h3,
+  .project-card p,
+  .project-card a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-card a {
+    display: block;
+    margin-top: 10px;
   }
 }
